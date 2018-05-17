@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body class="d-flex flex-column">
+
+    <div class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
 
         <div class="container">
 
@@ -21,7 +22,7 @@
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse float-right" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -38,9 +39,56 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-xl-12">
+                <h2>Contact</h2>
+
+                <form>
+
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Name</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-danger">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     </div>
+
+    <footer class="bg-dark text-light mt-auto">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-12 clarfix">
+                    <span class="text-right">Copyright.</span>
+                    <div class="float-right">
+                        <a href="#">
+                            <img src="images/icons/linkedin.svg" class="img-fluid" width="30px" alt="Linkedin">
+                        </a>
+                        <a href="#" class="pl-2">
+                            <img src="images/icons/instagram.svg" class="img-fluid" width="30px" alt="Linkedin">
+                        </a>
+                        <a href="#" class="pl-2">
+                            <img src="images/icons/facebook.svg" class="img-fluid" width="30px" alt="Linkedin">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
